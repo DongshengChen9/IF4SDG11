@@ -1,0 +1,4 @@
+**ECognition** is used for HSR-RS images' spectral and texture extraction, and object segmentation.
+The point density tool from **Arcgis** is used for POI density calculation.
+The pretrained **VGG16** model is used for VGG feature extraction (VGGfeats_extraction.py)
+(https://github.com/DongshengChen9/IF_4SDG11)
