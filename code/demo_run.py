@@ -6,10 +6,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import cohen_kappa_score, accuracy_score
 import pickle
 
+### Number of times to repeat the experiment
 num_repeat = 10
-
-cities_mean_kappa =[]
-cities_accuracy =[]
 
 """Note that the data file should be put under the directory ./input/"""
 data_file = f'./input/example_data.pkl'
@@ -18,6 +16,8 @@ if not os.path.exists(data_file):
     exit()
 
 
+cities_mean_kappa =[]
+cities_accuracy =[]
 with open(data_file, 'rb') as f:
     data = pickle.load(f)
 for _index in data.keys():
