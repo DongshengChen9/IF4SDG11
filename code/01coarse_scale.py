@@ -16,7 +16,7 @@ def calculate_average_feats(object_layer, pixel_layer):
     return polygons
 
 
-## prepare your own results of object segmentation and pixels with vgg features and place them in Data folder
+## prepare your own results of object segmentation and pixels with vgg features and place them in input folder
 objects_shp = './input/objects_with_spectral_textual.shp'
 pixels_shp = './input/pixels_with_vgg_poi.shp'
 objects = calculate_average_feats(objects_shp, pixels_shp)
